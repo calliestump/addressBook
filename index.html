@@ -10,26 +10,36 @@
 <body>
   <div class="container">
     <h1>Address Book</h1>
-    <h3>Add Contact:</h3>
-    <form id="newContact">
-      <label for="newfirstName">First Name:</label>
-      <input type="text" id="newFirstName">
-      <br>
-      <label for="newLastName">Last Name:</label>
-      <input type="text" id="newLastName">
-      <br>
-      <label for="newPhoneNumber">Phone Number:</label>
-      <input type="text" id="newPhoneNumber">
-      <br>
-      <br>
-      <button type="submit" class="btn btn-secondary">Add Contact</button></button>
-    </form>
-    <br>
-    <h3>Here are your contacts:</h3>
-    <ul id="contacts">
-      <br>
-    </ul>  
-    <div id="buttons">
+    <div class="row">
+      <div class="col-md-6">
+        <hr>
+        <h2>Add a contact:</h2>
+        <form id="newContact">
+          <label for="newfirstName">First Name:</label>
+          <input type="text" id="newFirstName">
+          <br>
+          <label for="newLastName">Last Name:</label>
+          <input type="text" id="newLastName">
+          <br>
+          <label for="newPhoneNumber">Phone Number:</label>
+          <input type="text" id="newPhoneNumber">
+          <br>
+          <br>
+          <button type="submit" class="btn btn-secondary">Add Contact</button></button>
+        </form>
+        <br>
+        <h3>Here are your contacts:</h3>
+        <ul id="contacts">
+          <br>
+        </ul> 
+        <div id="show-contact">
+          <p>First Name: <span class="first-name"></span></p>
+          <p>Last Name: <span class="last-name"></span></p>
+          <p>Phone Number: <span class="phone-number"></span></p>
+          <div id="buttons">
+          </div>
+        </div> 
+      </div>
     </div>
   </div>
 </body>
