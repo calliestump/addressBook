@@ -51,9 +51,12 @@ $(document).ready(function() {
   let addressBook = new AddressBook();
   $("form#newContact").submit(function(event) {
     event.preventDefault();
-    let contact = new Contact($("input#newFirstName").val(), $("input#newLastName").val(), $("input#newPhoneNumber").val());
-    addressBook.addContact(contact);
+    const inputtedFirstName = $("input#newFirstName").val();
+    const inputtedLastName = $("input#newLastName").val();
+    const inputtedPhoneNumber = $("input#newPhoneNumber").val()
+    let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
+    addressBook.addContact(newContact);
     console.log(addressBook.contacts);
-    $("#contacts").append(contact.fullName(contact) + "<br>");
+    $("#contacts").append(newContact.fullName(newContact) + "<br>");
   });
 });
