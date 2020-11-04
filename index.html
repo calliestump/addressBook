@@ -14,31 +14,39 @@
       <div class="col-md-6">
         <hr>
         <h2>Add a contact:</h2>
-        <form id="newContact">
-          <label for="newfirstName">First Name:</label>
-          <input type="text" id="newFirstName">
-          <br>
-          <label for="newLastName">Last Name:</label>
-          <input type="text" id="newLastName">
-          <br>
-          <label for="newPhoneNumber">Phone Number:</label>
-          <input type="text" id="newPhoneNumber">
-          <br>
-          <br>
-          <button type="submit" class="btn btn-secondary">Add Contact</button></button>
+        <form id="new-contact">
+          <div class="form-group">
+            <label for="new-first-name">First Name:</label>
+            <input type="text" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last Name:</label>
+            <input type="text" id="new-last-name">
+          </div>
+          <div class="form-group">
+            <label for="new-phone-number">Phone Number:</label>
+            <input type="text" id="new-phone-number">
+          </div>
+          <div class="form-group">
+            <label for="new-email-address">Email:</label>
+            <input type="text" id="new-email-address">
+          </div>
+          <button type="submit" class="btn btn-secondary">Add Contact</button>
         </form>
-        <br>
-        <h3>Here are your contacts:</h3>
+        <hr>
+        <h2>Contacts:</h2>
         <ul id="contacts">
-          <br>
         </ul> 
+      </div>
+      <div class="col-md-6">
         <div id="show-contact">
           <p>First Name: <span class="first-name"></span></p>
           <p>Last Name: <span class="last-name"></span></p>
           <p>Phone Number: <span class="phone-number"></span></p>
+          <p>Email: <span class="email-address"></span></p>
           <div id="buttons">
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   </div>
